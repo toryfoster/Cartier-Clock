@@ -1,0 +1,69 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+   /* background-color: rgb(242, 235, 227);*/
+   background-image: url(black-leather-background.jpg);
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+}
+/*change page background to a bone color */
+
+.clock {
+    position: relative;
+    width: 200px;
+    height: 300px;
+    border: 10px solid #d8a444;
+    border-radius: 10px;
+    background-image: url(tank-face-no-hands.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 0 0 20px rgba(132, 89, 9, 0.5);
+}
+/*change border of clcok to a metallic looking color (gold or silver) */
+
+.hand {
+    position: absolute;
+    background-color: #61dafb;
+    border-radius: 10px;
+    transform-origin: bottom center;
+    bottom: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+/* make the hands the famous cartier blue color  */
+
+.hour {
+    width: 8px;
+    height: 50px;
+    background-color: rgba(1, 78, 123, 1);
+    z-index: 3; /* Ensures hour hand is above others */
+}
+
+.minute {
+    width: 4px;
+    height: 70px;
+    background-color: rgba(1, 78, 123, 1);
+    z-index: 2; /* Ensures minute hand is above second hand */
+}
+
+.second {
+    width: 2px;
+    height: 90px;
+    background-color: red;
+    z-index: 1; /* Second hand is at the bottom */
+}
+
+.center-point {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background-color: rgba(1, 78, 123, 1);
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
